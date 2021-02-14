@@ -6,7 +6,7 @@ h2{
 .form-container{
     display: grid;
     grid-template-rows: 1fr ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     margin: 20px;
     justify-content: center;
     /* border:1px solid chocolate; */
@@ -14,11 +14,13 @@ h2{
 select {
     text-align-last: center;
     border: 1px solid rgb(235, 134, 95);    
-    width: 141px;    
+    width: 284px; 
+    height: 30px;   
 }
 input {
     text-align-last: center;
-    width: 134px;
+    width: 278px;
+    height: 30px;
     border: 1px solid rgb(235, 134, 95);    
 }
 input[type=text]:focus {
@@ -31,16 +33,7 @@ input[type=text]:focus {
     margin: 10px;
 }
 
-@media screen and (max-width: 768px){
-    .form-container{
-    display: grid;
-    grid-template-rows: 1fr ;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    margin: 20px;
-    justify-content: center;
-    /* border:1px solid chocolate; */
-}
-}
+
 body{    
     background: rgb(115 101 101);
     font-family: 'Benne', serif;
@@ -105,3 +98,15 @@ h1{
 a:hover{
     color: tomato;
 }
+@media screen and (max-width:768px){
+    .form-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    
+    }
+    body{
+        display: grid;
+        justify-items: center;
+    }
+    }
