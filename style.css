@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+h2{
+    color: brown;    
+}
+.form-container{
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    justify-content: center;
+    /* border:1px solid chocolate; */
+}
+select {
+    text-align-last: center;
+    border: 1px solid rgb(235, 134, 95);    
+    width: 141px;    
+}
+input {
+    text-align-last: center;
+    width: 134px;
+    border: 1px solid rgb(235, 134, 95);    
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+.btn{
+    margin: auto;
+}
+.block{
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .form-container{
+    display: grid;
+    grid-template-rows: 1fr ;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    margin: 20px;
+    justify-content: center;
+    /* border:1px solid chocolate; */
+}
+}
+body{    
+    background: rgb(115 101 101);
+    font-family: 'Benne', serif;
+    display: grid;
+    justify-items: center;
+    /* background-image: url(logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    
+     /* grid-template-rows: 35% 65%;  */
+}
+h3{
+    text-align: center;
+    color: cornsilk;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-3,.col-1,.col-2{
+    font-size: x-small;
+    text-align: center;
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.col-2 img{
+   
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ff4500;
+}
+
+
+.pricing{
+    font-family: 'Cinzel', serif;
+    display: grid;
+   color: blanchedalmond;
+    padding: 20px;
+    display: none;
+    width: 400px;
+}
+h4{
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+h1{
+    color: blanchedalmond;
+    margin: 0px;
+}
+.tax_info{
+    border-bottom: 1px solid white;
+}
+ a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: tomato;
+}
