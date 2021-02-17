@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 h2{
     color: brown;    
 }
@@ -54,7 +55,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .col-3,.col-1,.col-2{
-    font-size: x-small;
+    font-size: small;
     text-align: center;
     color: cornsilk;
     text-decoration: none;
@@ -98,15 +99,18 @@ h1{
 a:hover{
     color: tomato;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
+    body{
+        background-color: rgb(80, 74, 74);
+    }
     .form-container{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-content: center;
-    
+        grid-template-columns: 1fr;        
     }
-    body{
-        display: grid;
-        justify-items: center;
+    .col-3,.col-1,.col-2{
+        font-size: small;
+        text-align: center;
+        color: cornsilk;
+        text-decoration: none;
     }
-    }
+}
