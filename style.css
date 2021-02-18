@@ -55,7 +55,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .col-3,.col-1,.col-2{
-    font-size: small;
+    font-size: medium;
     text-align: center;
     color: cornsilk;
     text-decoration: none;
@@ -76,7 +76,7 @@ header{
 .pricing{
     font-family: 'Cinzel', serif;
     display: grid;
-   color: blanchedalmond;
+    color: blanchedalmond;
     padding: 20px;
     display: none;
     width: 400px;

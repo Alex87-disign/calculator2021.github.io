@@ -6,8 +6,8 @@ const btn = document.querySelector('.btn'),
     fuel = document.getElementById('fuel'),
     finalPayment = document.querySelector('.pricing');
 
-btn.addEventListener('click', () => {
-    // event.preventDefault();
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
 
 let motorBit = motor.value;
 
@@ -52,22 +52,30 @@ if(motorBit<=2000){
     let output=taxType+(motorBit*motor.value)+fuelType+taxPdv+250;
 
     
-    finalPayment.innerHTML+=`<h4>Всі митні платежі - ${output} евро  </h4>
+    finalPayment.innerHTML+=`<h4>Всі митні платежі - ${output} євро </h4>
     <div class="tax_info">
-    <p>Пдв ${taxPdv}€<br>
+    <p>ПДВ ${taxPdv}€<br>
     Ставка за об'єм двигуна ${motorBit*motor.value}€<br>
     Ставка за тип палива ${fuelType}€<br>
     Ставка за вік ${taxType}€<br>
     Добровільний внесок 250€ </p>
     </div>
-    <p>Для більi детальної інформації телефонуйте <br>
-    Та втупайте у наш телеграмм канал
+    <p>Для більш детальної інформації телефонуйте <br>
+    Та втупайте в наш телеграмм канал
     <a href="https://t.me/joinchat/TZewEta5-E-4FqQ0">telegram<img src="telegram.png" height="20" width="20"></a>
 <br>
     093-971-22-27<br>093-772-13-82<br>063-864-62-62</p>`;
-    finalPayment.style.display = "block"
-
+    finalPayment.style.display = "block";
+    
+    
+    // if(finalPayment.style.display == "block"){
+    //     finalPayment.firstChild.remove();
+    // }
     
 
+});
 
-})
+
+
+
+
