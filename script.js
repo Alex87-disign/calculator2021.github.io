@@ -61,8 +61,8 @@ if(motorBit<=2000){
     Добровільний внесок 250€ </p>
     </div>
     <p>Для більш детальної інформації телефонуйте <br>
-    Та втупайте в наш телеграмм канал
-    <a href="https://t.me/joinchat/TZewEta5-E-4FqQ0">telegram<img src="telegram.png" height="20" width="20"></a>
+    Та вступайте в наш  канал
+    <a href="https://t.me/joinchat/TZewEta5-E-4FqQ0">telegram<img src="telegram.png" height="20" width="20"></a> канал
 <br>
     093-971-22-27<br>093-772-13-82<br>063-864-62-62</p>`;
     finalPayment.style.display = "block";
