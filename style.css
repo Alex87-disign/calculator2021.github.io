@@ -20,7 +20,7 @@ select {
 }
 input {
     text-align-last: center;
-    width: 278px;
+    width: 280px;
     height: 30px;
     border: 1px solid rgb(235, 134, 95);    
 }
