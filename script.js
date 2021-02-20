@@ -52,7 +52,7 @@ if(motorBit<=2000){
     let output=taxType+(motorBit*motor.value)+fuelType+taxPdv+250;
 
     
-    finalPayment.innerHTML+=`<h4>Всі митні платежі - ${output} євро </h4>
+    finalPayment.innerHTML=`<h4>Всі митні платежі - ${output} євро </h4>
     <div class="tax_info">
     <p>ПДВ ${taxPdv}€<br>
     Ставка за об'єм двигуна ${motorBit*motor.value}€<br>
@@ -65,12 +65,7 @@ if(motorBit<=2000){
     <a href="https://t.me/joinchat/TZewEta5-E-4FqQ0">telegram<img src="telegram.png" height="20" width="20"></a> канал
 <br>
     093-971-22-27<br>093-772-13-82<br>063-864-62-62</p>`;
-    finalPayment.style.display = "block";
-    
-    
-    // if(finalPayment.style.display == "block"){
-    //     finalPayment.firstChild.remove();
-    // }
+    finalPayment.style.display = "block";  
     
 
 });
